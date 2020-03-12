@@ -117,9 +117,6 @@ export default {
         })
     },
     isAdmin () {
-        console.log(this.$store.getters.roles)
-        console.log(this.$store.state.roles)
-        console.log(this.$store)
         return this.$store.getters.roles.includes("admin")
     },
     handleAddLove (d) {
@@ -133,9 +130,11 @@ export default {
     handleSizeChange(val) {
         this.pageSize = val
         this.currentPage = 1
+        this.handleSearch()
     },
     handleCurrentChange(val) {
         this.currentPage = val
+        this.handleSearch()
     },
     handleAddBlog() {
         createBlog(this.blogData).then(res => {
