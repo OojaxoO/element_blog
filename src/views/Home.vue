@@ -1,7 +1,7 @@
 <template>
     <div>
         <el-row>
-            <el-col :span="12" v-for="d in data.result" :key="d.id">
+            <el-col :span="24" v-for="d in data.result" :key="d.id">
                 <el-card shadow="hover" style="margin: 10px">
                     <div slot="header" class="clearfix">
                         <div style="float: left">
