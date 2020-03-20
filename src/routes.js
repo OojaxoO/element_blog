@@ -1,5 +1,6 @@
 import Login from './views/Login.vue'
 import index from './layout/index.vue'
+import register from './views/register/Index.vue'
 
 let routes = [
     {
@@ -29,12 +30,12 @@ let routes = [
           }
         ]
     },
-    // {
-    //     path: '/math',
-    //     component: index,
-    //     name: '数学',
-    //     hidden: false 
-    // },
+    {
+        path: '/register/:name',
+        component: register,
+        name: '登记信息',
+        hidden: true,
+    },
     // {
     //     path: '/stock',
     //     component: index,
