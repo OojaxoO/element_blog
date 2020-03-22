@@ -17,15 +17,20 @@
                     width="180">
                   </el-table-column>
                   <el-table-column
-                    prop="sex"
-                    label="性别">
+                    prop="temperature"
+                    label="温度">
                   </el-table-column>
                   <el-table-column
                     prop="phone"
                     label="手机号码">
-                  </el-table-column> <el-table-column
-                    prop="id_card"
-                    label="身份证">
+                  </el-table-column> 
+                  <el-table-column
+                    prop="department"
+                    label="部门">
+                  </el-table-column>
+                  <el-table-column
+                    prop="note"
+                    label="备注">
                   </el-table-column>
                 </el-table>
                 <el-row type="flex">
